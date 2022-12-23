@@ -1,11 +1,17 @@
 #! /usr/bin/env node
-import _ from 'lodash'
-import _ from 'lodash'
+import lodash from 'lodash'
+import kit from '@elzup/kit'
 import repl from 'repl'
 
+// start message
 console.log('anozon node repl (^•ω•^)')
 
 const r = repl.start({ prompt: 'node> ' })
 
-r.context._ = _
-r.context._ = _
+Object.defineProperty(r.context, '_', {
+  configurable: false,
+  enumerable: true,
+  value: lodash,
+})
+
+r.context.kit = kit
