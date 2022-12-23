@@ -1,7 +1,7 @@
 {
   "name": "anode-repl",
   "version": "1.0.0",
-  "description": "personal ucstom node REPL",
+  "description": "personal custom node REPL",
   "main": "index.js",
   "type": "module",
   "bin": {

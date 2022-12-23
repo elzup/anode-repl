@@ -1,6 +1,6 @@
 # anode-repl
 
-> personal ucstom node REPL
+> personal custom node REPL
 
 ## pre loaded
 
